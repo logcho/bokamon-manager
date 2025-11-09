@@ -306,7 +306,7 @@ class DB:
 
         arr = []
         for p, (w, l) in stats.items():
-            pct = w / (w + l) if (w + l) else 0
+            pct = (w / (w + l) * 100) if (w + l) else 0
             arr.append((p, self.player_name(p), w, l, pct))
 
         arr.sort(key=lambda x: (-x[4], -x[2], x[0]))
