@@ -1,4 +1,4 @@
-# bokamon-database
+# bokamon-manager
 
 ## Overview
 
